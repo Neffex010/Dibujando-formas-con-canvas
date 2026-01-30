@@ -1,0 +1,114 @@
+/* =========================================
+   1. IMPORTACIÓN DE FUENTES
+   ========================================= */
+/* Traemos la fuente 'Poppins' para que se vea más moderno que la fuente por defecto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* =========================================
+   2. CUERPO Y FONDO
+   ========================================= */
+body {
+    /* Degradado azul suave y profesional (Tech Blue) */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    /* Si prefieres un azul más intenso, usa este en su lugar: */
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; */
+    
+    font-family: 'Poppins', sans-serif !important;
+    min-height: 100vh;
+}
+
+/* Ajuste para el título principal (usa la clase de Bootstrap pero cambiamos la fuente) */
+h1 {
+    font-weight: 600 !important;
+    letter-spacing: -1px;
+    color: #2c3e50 !important; /* Azul oscuro casi negro para contraste */
+}
+
+/* =========================================
+   3. ESTILOS DE TARJETAS (CARDS)
+   ========================================= */
+.card {
+    /* Quitamos el borde gris aburrido de Bootstrap */
+    border: none !important;
+    
+    /* Bordes más redondeados */
+    border-radius: 15px !important;
+    
+    /* Sombra base suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Fondo blanco puro */
+    background-color: #ffffff;
+}
+
+/* Estilo específico para la tarjeta personal (la verde del ejemplo 0) */
+.border-success {
+    /* Mantenemos el borde pero lo hacemos más sutil o vibrante si deseas */
+    border: 2px solid #198754 !important; /* Verde Bootstrap */
+}
+
+/* Cabecera de la tarjeta verde */
+.card-header.bg-success {
+    border-radius: 15px 15px 0 0 !important; /* Redondear solo arriba */
+    background: linear-gradient(45deg, #198754, #20c997) !important; /* Degradado verde */
+}
+
+/* =========================================
+   4. EFECTOS HOVER (ANIMACIÓN)
+   ========================================= */
+.hover-effect {
+    /* Transición muy fluida */
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.hover-effect:hover {
+    /* La tarjeta se eleva */
+    transform: translateY(-10px);
+    
+    /* Sombra azulada brillante al pasar el mouse */
+    box-shadow: 0 12px 25px rgba(13, 110, 253, 0.2) !important;
+}
+
+/* Pequeño detalle: colorear el título de la tarjeta al pasar el mouse */
+.hover-effect:hover .card-title {
+    color: #0d6efd !important; /* Azul Bootstrap */
+    transition: color 0.3s;
+}
+
+/* =========================================
+   5. CANVAS (El área de dibujo)
+   ========================================= */
+canvas {
+    /* Evita desenfoque en monitores retina */
+    image-rendering: -webkit-optimize-contrast;
+    
+    /* Fondo blanco para que el dibujo resalte sobre el gris de la tarjeta */
+    background-color: #ffffff;
+    
+    /* Borde sutil alrededor del canvas */
+    border: 1px solid #e9ecef !important;
+    border-radius: 8px;
+}
+/* =========================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================= */
+.custom-footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto vidrio */
+    border-top: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.02);
+}
+
+.student-name {
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+}
+
+.subject-name {
+    color: #6c757d;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
