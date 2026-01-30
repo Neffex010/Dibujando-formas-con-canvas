@@ -31,7 +31,7 @@ El proyecto consta de 11 visualizaciones renderizadas en tiempo real:
 * **Bootstrap 5.3:** Sistema de rejilla (Grid) y componentes de tarjetas (Cards).
 * **JavaScript (ES6):** Lógica de dibujo y manipulación del DOM.
 
-## 🎓 CAUTOR
+## 🎓 AUTOR
 
 **Alumno:** Luis Enrique Cabrera Garcia  
 **Materia:** Desarrollo de Ambientes Virtuales  
